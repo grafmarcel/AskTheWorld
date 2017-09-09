@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="net.asktheworld.asktheworld.listanswers">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:adjustViewBounds="false"
+        android:visibility="visible"
+        app:srcCompat="@mipmap/atw_logo_xxxhdpi" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:text="Antworten anderer User"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_below="@+id/editText10"
+        android:layout_alignLeft="@+id/editText10"
+        android:layout_alignStart="@+id/editText10"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="deine Frage"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="User <User93> antwortete am: 27.09.2017                                                                        Ich glaube die nächste Abstimmung ist für                                                   Februar 2019 geplant."
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/editText13"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_alignEnd="@+id/editText12"
+        android:layout_alignLeft="@+id/editText12"
+        android:layout_alignRight="@+id/editText12"
+        android:layout_alignStart="@+id/editText12"
+        android:layout_below="@+id/editText12"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="User <User93> antwortete am: 27.09.2017                                                                        Ich arbeite in der Stadtverwaltung und kann mit Sicherheit bestätigen, dass <User93> völlig richtig liegt, wir bereiten gerade alles vor dafür."
+        android:textAllCaps="false"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="erstellt am: 27.09.2017                                                                        Titel: Nächste Abstimmung in Regensdorf                                                  Wann finden die nächste Abstimmung bei uns statt?"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:layout_below="@+id/textView7"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_alignRight="@+id/textView7"
+        android:layout_alignEnd="@+id/textView7" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:text="Löschen"
+        android:textSize="10sp"
+        android:layout_below="@+id/button14"
+        android:layout_alignLeft="@+id/button14"
+        android:layout_alignStart="@+id/button14" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:text="zurück"
+        android:textSize="10sp"
+        android:layout_marginBottom="14dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/editText12"
+        android:layout_alignStart="@+id/editText12" />
+
+    <Button
+        android:id="@+id/button24"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/button25"
+        android:layout_alignEnd="@+id/editText13"
+        android:layout_alignRight="@+id/editText13"
+        android:text="Löschen" />
+
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:text="Schliessen"
+        android:layout_alignBottom="@+id/button14"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

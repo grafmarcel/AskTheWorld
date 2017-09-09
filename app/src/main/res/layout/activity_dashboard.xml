@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="net.asktheworld.asktheworld.Dashboard">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:adjustViewBounds="false"
+        android:visibility="visible"
+        app:srcCompat="@mipmap/atw_logo_xxxhdpi" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="@android:dimen/notification_large_icon_height"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_marginTop="36dp"
+        android:text="M"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/button7"
+        android:layout_alignLeft="@+id/button7"
+        android:layout_alignStart="@+id/button7" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="@android:dimen/notification_large_icon_height"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4"
+        android:layout_below="@+id/button4"
+        android:layout_marginTop="36dp"
+        android:text="A"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="@android:dimen/notification_large_icon_height"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_alignBottom="@+id/button4"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4"
+        android:text="Q"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="?android:attr/listPreferredItemHeight"
+        android:layout_height="?attr/listPreferredItemHeightLarge"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginLeft="53dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="81dp"
+        android:text="Ask" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button6"
+        android:layout_toEndOf="@+id/button6"
+        android:layout_toRightOf="@+id/button6"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Verwalte deine Fragen"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button7"
+        android:layout_toEndOf="@+id/button7"
+        android:layout_toRightOf="@+id/button7"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Beantworte eine Frage"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button4"
+        android:layout_toEndOf="@+id/button5"
+        android:layout_toRightOf="@+id/button5"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Stell eine Frage"
+        android:textSize="14sp" />
+
+</RelativeLayout>

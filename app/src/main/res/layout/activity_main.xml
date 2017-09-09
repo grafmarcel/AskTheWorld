@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="net.asktheworld.asktheworld.MainActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="36dp"
+        android:hint="@string/prompt_email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="@android:dimen/notification_large_icon_width"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:adjustViewBounds="false"
+        android:visibility="visible"
+        app:srcCompat="@mipmap/atw_logo_xxxhdpi" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="100dp"
+        android:layout_height="?android:attr/expandableListPreferredItemPaddingLeft"
+        android:layout_marginBottom="21dp"
+        android:elevation="0dp"
+        android:text="Konto erstellen"
+        android:textSize="10sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignStart="@+id/editText4" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Anmelden"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/autoCompleteTextView"
+        android:layout_alignLeft="@+id/autoCompleteTextView"
+        android:layout_alignRight="@+id/autoCompleteTextView"
+        android:layout_alignStart="@+id/autoCompleteTextView"
+        android:layout_below="@+id/autoCompleteTextView"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="@android:dimen/notification_large_icon_height"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/editText5"
+        android:layout_alignStart="@+id/editText5"
+        android:layout_below="@+id/editText5"
+        android:backgroundTint="@android:color/transparent"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:text="Angemeldet bleiben"
+        android:textAlignment="textStart"
+        android:textSize="12sp"
+        tools:layout_width="130dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="@android:dimen/notification_large_icon_height"
+        android:layout_height="30dp"
+        android:layout_above="@+id/button"
+        android:layout_toEndOf="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:backgroundTint="@android:color/transparent"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:text="Neu hier?"
+        android:textAlignment="textEnd"
+        android:textSize="12sp"
+        tools:layout_width="75dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignEnd="@+id/editText5"
+        android:layout_alignRight="@+id/editText5"
+        android:layout_below="@+id/editText5"
+        android:max="10"
+        android:progress="3" />
+
+</RelativeLayout>

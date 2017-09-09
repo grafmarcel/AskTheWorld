@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="net.asktheworld.asktheworld.listquestions">
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/editText11"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editText11"
+        android:layout_marginBottom="14dp"
+        android:text="zurück"
+        android:textAllCaps="false"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:adjustViewBounds="false"
+        android:visibility="visible"
+        app:srcCompat="@mipmap/atw_logo_xxxhdpi" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:text="offene Fragen"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_below="@+id/spinner2"
+        android:layout_alignLeft="@+id/spinner2"
+        android:layout_alignStart="@+id/spinner2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:text="örtliche Begrenzung"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/textView5"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:text="Filter"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:text="Kategorie"
+        android:textColor="@android:color/black" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/textView6" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="Frage von <User2>                                                                        Bin auf der Suche nach einem Baugrundstück bei uns im Dorf, hat jemand eines zu Verkaufen?"
+        android:textSize="12sp"
+        android:layout_below="@+id/button8"
+        android:layout_alignLeft="@+id/button18"
+        android:layout_alignStart="@+id/button18" />
+
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="Frage von <User1>                                                                        Wann finden die nächste Abstimmung bei uns statt?"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Antworten"
+        android:layout_below="@+id/editText11"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Antworten"
+        android:layout_below="@+id/editText9"
+        android:layout_alignLeft="@+id/button8"
+        android:layout_alignStart="@+id/button8" />
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="net.asktheworld.asktheworld.ask">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:adjustViewBounds="false"
+        android:visibility="visible"
+        app:srcCompat="@mipmap/atw_logo_xxxhdpi" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Formuliere hier deine Frage und kategorisiere Sie. Wähle eine örtliche Begrenzung falls gewünscht."
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:text="örtliche Begrenzung"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/spinner"
+        android:layout_alignLeft="@+id/spinner2"
+        android:layout_alignStart="@+id/spinner2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:text="Kategorie"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/spinner2"
+        android:layout_alignLeft="@+id/editText7"
+        android:layout_alignStart="@+id/editText7" />
+
+    <EditText
+        android:id="@+id/editText7"
+        style="@android:style/Widget.DeviceDefault.EditText"
+        android:layout_width="300dp"
+        android:layout_height="145dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/button3"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginBottom="16dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textView4"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="Veröffentlichen"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:text="zurück"
+        android:textAllCaps="false"
+        android:textSize="10sp"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_alignLeft="@+id/spinner"
+        android:layout_alignStart="@+id/spinner" />
+
+</RelativeLayout>

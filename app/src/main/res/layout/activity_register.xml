@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="net.asktheworld.asktheworld.register">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="@android:dimen/notification_large_icon_width"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:adjustViewBounds="false"
+        android:visibility="visible"
+        app:srcCompat="@mipmap/atw_logo_xxxhdpi" />
+
+    <EditText
+        android:id="@+id/editText17"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="PLZ"
+        android:textSize="12sp"
+        android:layout_below="@+id/editText20"
+        android:layout_alignLeft="@+id/editText20"
+        android:layout_alignStart="@+id/editText20" />
+
+    <EditText
+        android:id="@+id/editText20"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/editText19"
+        android:layout_alignStart="@+id/editText19"
+        android:layout_below="@+id/editText19"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Land"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editText19"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/editText18"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Email"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editText18"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textSize="12sp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/editText19"
+        android:layout_alignStart="@+id/editText19" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText17"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="Registrieren" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:text="zurück"
+        android:textAllCaps="false"
+        android:textSize="10sp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/editText17"
+        android:layout_toStartOf="@+id/editText17"
+        android:layout_marginBottom="18dp" />
+
+</RelativeLayout>

@@ -13,4 +13,16 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+<<<<<<< HEAD
+=======
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="title_activity_ask">ask</string>
+    <string name="title_activity_listquestions">listquestions</string>
+    <string name="title_activity_answer">answer</string>
+    <string name="title_activity_manage">manage</string>
+    <string name="title_activity_register">register</string>
+    <string name="title_activity_listanswers">listanswers</string>
+>>>>>>> Erster Draft aller Layouts der 8 nötigen Screens ohne Java-Code
 </resources>
