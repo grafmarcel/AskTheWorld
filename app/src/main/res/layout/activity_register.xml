@@ -20,64 +20,72 @@
         app:srcCompat="@mipmap/atw_logo_xxxhdpi" />
 
     <EditText
-        android:id="@+id/editText17"
-        android:layout_width="170dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="18dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="PLZ"
-        android:textSize="12sp"
-        android:layout_below="@+id/editText20"
-        android:layout_alignLeft="@+id/editText20"
-        android:layout_alignStart="@+id/editText20" />
-
-    <EditText
         android:id="@+id/editText20"
         android:layout_width="170dp"
         android:layout_height="35dp"
-        android:layout_alignLeft="@+id/editText19"
-        android:layout_alignStart="@+id/editText19"
         android:layout_below="@+id/editText19"
-        android:layout_marginTop="18dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Land"
-        android:textSize="12sp" />
-
-    <EditText
-        android:id="@+id/editText19"
-        android:layout_width="170dp"
-        android:layout_height="35dp"
-        android:layout_below="@+id/editText18"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Email"
         android:textSize="12sp" />
 
     <EditText
-        android:id="@+id/editText18"
+        android:id="@+id/editText19"
         android:layout_width="170dp"
         android:layout_height="35dp"
-        android:layout_marginTop="24dp"
+        android:layout_alignLeft="@+id/editText20"
+        android:layout_alignStart="@+id/editText20"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editText18"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/editText20"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Land"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editText17"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="PLZ"
         android:textSize="12sp"
-        android:layout_below="@+id/imageView"
-        android:layout_alignLeft="@+id/editText19"
-        android:layout_alignStart="@+id/editText19" />
+        android:layout_below="@+id/editText18"
+        android:layout_alignLeft="@+id/editText18"
+        android:layout_alignStart="@+id/editText18" />
+
+    <EditText
+        android:id="@+id/editText14"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/editText17"
+        android:layout_alignStart="@+id/editText17"
+        android:layout_below="@+id/editText17"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Password"
+        android:textSize="12sp" />
 
     <Button
         android:id="@+id/button10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText17"
+        android:text="Registrieren"
+        android:layout_above="@+id/button19"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="31dp"
-        android:text="Registrieren" />
+        android:layout_marginBottom="19dp" />
 
     <Button
         android:id="@+id/button19"
@@ -86,9 +94,9 @@
         android:text="zurück"
         android:textAllCaps="false"
         android:textSize="10sp"
+        android:layout_marginBottom="18dp"
         android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/editText17"
-        android:layout_toStartOf="@+id/editText17"
-        android:layout_marginBottom="18dp" />
+        android:layout_toStartOf="@+id/editText14"
+        android:layout_toLeftOf="@+id/editText14" />
 
 </RelativeLayout>

@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import net.asktheworld.asktheworld.repositories.QuestionRepository;
+
 public class Dashboard extends AppCompatActivity {
 
     @Override
@@ -22,6 +24,9 @@ public class Dashboard extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+
+
+                QuestionRepository.getInstance().getQuestions();
             }
         });
     }
